@@ -4,5 +4,7 @@ stages:
 Lol_job:
   stage: test123
   script:
-    - ansible-lint *.py
+    pip install pycodestyle
+  script:
+    - pycodestyle *.py
       
