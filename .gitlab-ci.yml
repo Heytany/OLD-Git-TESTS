@@ -1,0 +1,10 @@
+stage:
+  -test
+
+Lol_job:
+  stage: test
+  script:
+    - ansible-lint *.py
+      
+  tags:
+    - ansible
