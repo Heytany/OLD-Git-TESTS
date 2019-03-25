@@ -5,7 +5,9 @@ def Kmt_method_test(X,Y):
         
     if (isinstance(Y, np.ndarray)==True) | (isinstance(Y, list)==True):
         SecondP=True
-    
+        
+    #Creating 2 bool param named FirstP&SecondP what get TRUE if X&Y are lists or np.ndarray types 
+    # if func params type is not a valueble or another error func always return list with [0,0]
     
     if  ((FirstP==False) & (SecondP==False)) | ((FirstP==False) | (SecondP==False)):
         print("Данная функция принимает как параметры только списки или массивы библиотеки Numpy")
