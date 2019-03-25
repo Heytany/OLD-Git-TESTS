@@ -1,4 +1,4 @@
-stage:
+stages:
   -test
 
 Lol_job:
