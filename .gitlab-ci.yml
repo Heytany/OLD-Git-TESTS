@@ -1,5 +1,5 @@
 stages:
-  -test123
+  - test123
 
 Lol_job:
   stage: test123
