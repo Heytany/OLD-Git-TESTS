@@ -1,10 +1,11 @@
-job1:
-  stage: test
-  script:
-    - execute_script_that_will_succeed
+stages:
+  -test
 
-job1:
-  stage: test
-  script:
-    - deploy_to_staging
 
+test_job:
+  stage: test
+  script;
+    - ansible-lint *.yml
+    
+  tags:
+    - ansible
