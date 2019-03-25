@@ -1,8 +1,8 @@
 stages:
-  -test
+  -test123
 
 Lol_job:
-  stage: test
+  stage: test123
   script:
     - ansible-lint *.py
       
