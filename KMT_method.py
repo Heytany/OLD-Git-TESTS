@@ -1,5 +1,5 @@
 def Kmt_method_test(X,Y):
-    
+# god please kill me 
     if (isinstance(X, np.ndarray)==True) | (isinstance(X, list)==True):
         FirstP=True
         
