@@ -2,17 +2,10 @@ image: python:latest
 
 stages:
   - test
-  - test1
-  - test2
+
 
 
 Lol_job1:
   stage: test  
   script:
-    - pip install --upgrade pip
-  stage: test1    
-  script:
-    - pip install pycodestyle
-  stage: test2
-  script:
-    - pycodestyle *.py
+    - ./NewMeta.sh
