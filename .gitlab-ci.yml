@@ -1,18 +1,20 @@
 image: python:latest
 
 stages:
-  - test123
+  - test
+  - test1
+  - test2
 
 
 Lol_job1:
-  stage: test123    
+  stage: test  
   script:
     - sudo pip install --upgrade pip
 Lol_job2:
-  stage: test123    
+  stage: test1    
   script:
     - pip install pycodestyle
 Lol_job:
-  stage: test123
+  stage: test2
   script:
     - pycodestyle *.py
