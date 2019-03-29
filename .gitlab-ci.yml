@@ -10,11 +10,9 @@ Lol_job1:
   stage: test  
   script:
     - pip install --upgrade pip
-Lol_job2:
   stage: test1    
   script:
     - pip install pycodestyle
-Lol_job:
   stage: test2
   script:
     - pycodestyle *.py
