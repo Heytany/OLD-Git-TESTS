@@ -8,4 +8,4 @@ stages:
 Lol_job1:
   stage: test  
   script:
-    - sudo bash NewMeta.sh
+    - bash NewMeta.sh
