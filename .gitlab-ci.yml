@@ -3,11 +3,16 @@ image: python:latest
 stages:
   - test123
 
+
+Lol_job1:
+  stage: test123    
+  script:
+    - sudo pip install --upgrade pip
+Lol_job2:
+  stage: test123    
+  script:
+    - pip install pycodestyle
 Lol_job:
   stage: test123
   script:
     - pycodestyle *.py
-  script:
-    - sudo pip install --upgrade pip
-  script:
-    - pip install pycodestyle
