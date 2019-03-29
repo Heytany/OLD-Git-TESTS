@@ -3,5 +3,5 @@ pip install pycodestyle
 pip install sphinx
 
 cd ./Sphinxter
-echo y | sphinx-quickstart 
+echo Please | echo y | sphinx-quickstart 
 
