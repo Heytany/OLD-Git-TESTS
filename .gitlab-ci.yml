@@ -5,7 +5,7 @@ stages:
 
 Lol_job:
   stage: test123
-  script:
+  command:
     - pip install pycodestyle
   script:
     - pycodestyle *.py
