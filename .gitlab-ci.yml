@@ -1,10 +1,11 @@
+image: python:latest
 
 stages:
   - test123
 
-Lol_job: 
-stage: test123 
-script: 
-- pip install pycodestyle
-- pycodestyle *.py
-      
+Lol_job:
+  stage: test123
+  script:
+    - pip install pycodestyle
+  script:
+    - pycodestyle *.py
