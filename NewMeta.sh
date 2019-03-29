@@ -4,3 +4,5 @@ pip install sphinx
 
 cd ./Sphinxter
 sphinx-quickstart 
+y
+n
