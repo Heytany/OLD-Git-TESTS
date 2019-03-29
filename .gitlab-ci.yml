@@ -9,7 +9,7 @@ stages:
 Lol_job1:
   stage: test  
   script:
-    - sudo pip install --upgrade pip
+    - pip install --upgrade pip
 Lol_job2:
   stage: test1    
   script:
