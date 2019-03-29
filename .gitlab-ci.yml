@@ -5,7 +5,9 @@ stages:
 
 Lol_job:
   stage: test123
-  command:
+  script:
+    - sudo pip install --upgrade pip
+  script:
     - pip install pycodestyle
   script:
     - pycodestyle *.py
