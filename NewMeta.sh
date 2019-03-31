@@ -4,4 +4,4 @@ pycodestyle *.py
 
 pip install sphinx
 cd ./Sphinxter
-printf 'YEAH\y' | sphinx-quickstart
+echo y n | sphinx-quickstart
