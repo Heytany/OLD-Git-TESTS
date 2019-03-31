@@ -4,4 +4,4 @@ pycodestyle *.py
 
 pip install sphinx
 cd ./Sphinxter
-echo "Y N N" | sphinx-quickstart
+echo "y Satan666 n" | sphinx-quickstart
