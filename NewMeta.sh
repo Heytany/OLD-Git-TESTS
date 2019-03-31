@@ -4,4 +4,4 @@ pycodestyle *.py
 
 pip install sphinx
 cd ./Sphinxter
-echo "Y MyFirstDate" | sphinx-quickstart
+echo "Y MyFirstDate N" | sphinx-quickstart
