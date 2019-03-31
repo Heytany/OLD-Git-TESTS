@@ -4,4 +4,4 @@ pycodestyle *.py
 
 pip install sphinx
 cd ./Sphinxter
-printf 'y\ny\ny\ny\y\en' | sphinx-quickstart
+printf 'y\ny\ny\ny\y\ru\ru\ru' | sphinx-quickstart
