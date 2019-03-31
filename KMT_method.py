@@ -1,4 +1,4 @@
-def Kmt_method_test(X,Y):
+def Kmt_method_test(X, Y):
 # god please kill me 
     if (isinstance(X, np.ndarray)==True) | (isinstance(X, list)==True):
         FirstP=True
@@ -20,34 +20,34 @@ def Kmt_method_test(X,Y):
         
         if len(X)!=len(Y):
             print("Размеры передаваемых листов должны быть одинаковыми")
-            return [0,0] 
+            return [0, 0] 
         else:
             
             N=len(Y)
         
             try:
-                for i in range(0,N):
+                for i in range(0, N):
                     q+=N*X[i]*Y[i]
                     w+=X[i]
                     e+=Y[i]
     
                 r=q-w*e
 
-                for i in range(0,N):
+                for i in range(0, N):
                     t=t+N*(X[i]**2)
                     u=u+X[i]
     
                 u=(u**2)   
 
-                for i in range(0,N):
+                for i in range(0, N):
                     a=r/(t-u)
                     b=1/N*(e-a*w)
     
-                print("a  = ",a)
-                print("b  = ",b)
+                print("a  = ", a)
+                print("b  = ", b)
     
-                return [a,b]
+                return [a, b]
             except:
                 print("Значения хранимые в передаваемом листе должны быть числовыми и/или дробными")
-                return [0,0]
+                return [0, 0]
            
