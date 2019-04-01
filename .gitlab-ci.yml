@@ -20,9 +20,9 @@ Lol_job2:
     - python *.py
     
 Lol_job3:
-  pages  
+pages  
   script:
-    - bash NewMeta.sh
+  - bash NewMeta.sh
   artifacts:
     paths:
     - public
