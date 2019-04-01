@@ -12,5 +12,6 @@ Lol_job1:
 
 Lol_job2:
   stage: test  
-   script:
-     - python *.py
+  script:
+    - python *.py
+
