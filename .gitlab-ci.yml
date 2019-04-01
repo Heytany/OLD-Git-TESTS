@@ -20,12 +20,12 @@ Lol_job2:
     - python *.py
     
 Lol_job3:
-  stage: pages  
+  pages  
   script:
     - bash NewMeta.sh
   artifacts:
     paths:
-    - ./
+    - public
   only:
   - master
     
