@@ -20,7 +20,7 @@ Lol_job2:
     - python *.py
     
 Lol_job3:
-pages  
+pages:  
   script:
   - bash NewMeta.sh
   artifacts:
