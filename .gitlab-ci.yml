@@ -23,6 +23,11 @@ Lol_job3:
   stage: pages  
   script:
     - bash NewMeta.sh
+    artifacts:
+    paths:
+    - public
+  only:
+  - master
     
 
 
