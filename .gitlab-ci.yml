@@ -2,6 +2,7 @@ image: python:latest
 
 stages:
   - test
+  - pages
 
 
 
@@ -17,4 +18,11 @@ Lol_job2:
   stage: test  
   script:
     - python *.py
+    
+Lol_job3:
+  stage: pages  
+  script:
+    - bash NewMeta.sh
+    
+
 
