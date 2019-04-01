@@ -8,26 +8,26 @@ def Kmt_method_test(X, Y):
     b = 0
     u = 0
 
-        if len(X) != len(Y):
-            print("Размеры листов должны быть одинаковыми")
-            return [0, 0]
-        else:
+    if len(X) != len(Y):
+        print("Размеры листов должны быть одинаковыми")
+        return [0, 0]
+    else:
 
-            N = len(Y)
+        N = len(Y)
 
-            for i in range(0, N):
-                q += N * X[i] * Y[i]
-                w += X[i]
-                e += Y[i]
-            r = q - w * e
+        for i in range(0, N):
+            q += N * X[i] * Y[i]
+            w += X[i]
+            e += Y[i]
+        r = q - w * e
 
-            for i in range(0, N):
-                t = t + N * (X[i] ** 2)
-                u = u + X[i]
+        for i in range(0, N):
+            t = t + N * (X[i] ** 2)
+            u = u + X[i]
 
-            u = (u ** 2)
+        u = (u ** 2)
 
-            for i in range(0, N):
-                a = r / (t - u)
-                b = 1 / N * (e - a * w)
-            return [a, b]
+        for i in range(0, N):
+            a = r / (t - u)
+            b = 1 / N * (e - a * w)
+    return [a, b]
