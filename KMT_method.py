@@ -15,7 +15,6 @@ def Kmt_method_test(X, Y):
 
             N = len(Y)
 
-            try:
                 for i in range(0, N):
                     q += N * X[i] * Y[i]
                     w += X[i]
@@ -32,6 +31,5 @@ def Kmt_method_test(X, Y):
                     a = r / (t - u)
                     b = 1 / N * (e - a * w)
                 return [a, b]
-            except:
                 print("Значения в листе должны быть числовыми")
                 return [0, 0]
