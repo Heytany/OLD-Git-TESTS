@@ -19,7 +19,7 @@ Lol_job2:
   script:
     - python *.py
     
-Lol_job3:
+
 pages:  
   script:
   - bash NewMeta.sh
