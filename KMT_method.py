@@ -1,20 +1,5 @@
 def Kmt_method_test(X, Y):
-    if (isinstance(X, np.ndarray) is True) | (isinstance(X, list) is True):
-        FirstP = True
-
-    if (isinstance(Y, np.ndarray) is True) | (isinstance(Y, list) is True):
-        SecondP = True
-        # Creating 2 bool param named FirstP & SecondP what get TRUE
-    if X & Y are lists or np.ndarray types#
-    if func params type is not a valueble
-    or another error func always return list with[0, 0]
-
-    if ((FirstP is False) & (SecondP is False)) | 
-    ((FirstP is False) | (SecondP is False)):
-        print("функция прин. только списки или массивы")
-        return [0, 0]
-    else:
-
+    
         q = 0
         w = 0
         e = 0
