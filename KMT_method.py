@@ -1,5 +1,5 @@
 def Kmt_method_test(X, Y):
-    
+
         q = 0
         w = 0
         e = 0
@@ -15,21 +15,19 @@ def Kmt_method_test(X, Y):
 
             N = len(Y)
 
-                for i in range(0, N):
-                    q += N * X[i] * Y[i]
-                    w += X[i]
-                    e += Y[i]
-                r = q - w * e
+            for i in range(0, N):
+                q += N * X[i] * Y[i]
+                w += X[i]
+                e += Y[i]
+            r = q - w * e
 
-                for i in range(0, N):
-                    t = t + N * (X[i] ** 2)
-                    u = u + X[i]
+            for i in range(0, N):
+                t = t + N * (X[i] ** 2)
+                u = u + X[i]
 
-                u = (u ** 2)
+            u = (u ** 2)
 
-                for i in range(0, N):
-                    a = r / (t - u)
-                    b = 1 / N * (e - a * w)
-                return [a, b]
-                print("Значения в листе должны быть числовыми")
-                return [0, 0]
+            for i in range(0, N):
+                a = r / (t - u)
+                b = 1 / N * (e - a * w)
+            return [a, b] 
