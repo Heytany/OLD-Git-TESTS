@@ -31,3 +31,4 @@ def Kmt_method_test(X, Y):
                 a = r / (t - u)
                 b = 1 / N * (e - a * w)
             return [a, b] 
+            
