@@ -20,14 +20,19 @@ Lol_job2:
     - python *.py
     
 
-pages:  
+pages:
   script:
-  - bash NewMeta.sh
+  - apk --no-cache add py2-pip python-dev
+  - pip install sphinx
+  - apk --no-cache add make
+  - make html
+  - mv _build/html/ public/
   artifacts:
     paths:
     - public
   only:
   - master
+
     
 
 
