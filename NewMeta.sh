@@ -1,7 +1,7 @@
+apk --no-cache add py2-pip python-dev
 pip install sphinx
-cd ./Sphinxter
-printf 'y\ny\ny\ny\n\n\n\n' | sphinx-quickstart
+apk --no-cache add make
 make html
 mv _build/html/ public/
-ls
+
 
