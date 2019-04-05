@@ -22,6 +22,7 @@ Lol_job2:
 
 pages:
   script:
+  - pip install apk
   - apk --no-cache add py2-pip python-dev
   - pip install sphinx
   - apk --no-cache add make
