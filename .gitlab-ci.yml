@@ -22,7 +22,10 @@ Lol_job2:
 
 pages:
   script:
-  - bash NewMeta.sh
+  - pip install -U sphinx
+  - sphinx-apidoc -o . .
+  - make html
+  - cd _build/html/
   artifacts:
     paths:
     - public
