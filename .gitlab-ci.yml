@@ -5,7 +5,9 @@ pages:
   - apk --no-cache add py2-pip python-dev
   - pip install sphinx
   - apk --no-cache add make
+  - wpr
   - sphinx-build html .
+  - wpr
   - mv . public/
   artifacts:
     paths:
