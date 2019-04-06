@@ -5,9 +5,9 @@ pages:
   - apk --no-cache add py2-pip python-dev
   - pip install sphinx
   - apk --no-cache add make
+  - ls
   - pwd
-  - sphinx-build html /builds/artemev/test-with-python/All
-  - pwd
+  - sphinx-build html ./ public/
   - mv /builds/artemev/test-with-python/All public/
   artifacts:
     paths:
