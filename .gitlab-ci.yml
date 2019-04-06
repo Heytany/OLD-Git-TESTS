@@ -7,7 +7,7 @@ pages:
   - apk --no-cache add make
   - ls
   - pwd
-  - sphinx-build html ./ 
+  - sphinx-build -W -b html -c ./ -d {envtmpdir}/doctrees .  {envtmpdir}/html
   - mv /builds/artemev/test-with-python/All public/
   artifacts:
     paths:
