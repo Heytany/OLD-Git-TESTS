@@ -20,18 +20,21 @@ Lol_job2:
     - python *.py
     
 
+image: alpine
+
 pages:
   script:
-  - cd ./Sphinxter
-  - pip install -U sphinx
-  - sphinx-apidoc -o . .
+  - apk --no-cache add py2-pip python-dev
+  - pip install sphinx
+  - apk --no-cache add make
   - make html
-  - cd _build/html/
+  - mv _build/html/ public/
   artifacts:
     paths:
     - public
   only:
   - master
+
 
     
 
