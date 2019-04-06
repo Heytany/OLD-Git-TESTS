@@ -22,6 +22,7 @@ Lol_job2:
 
 pages:
   script:
+  - cd ./Sphinxter
   - pip install -U sphinx
   - sphinx-apidoc -o . .
   - make html
