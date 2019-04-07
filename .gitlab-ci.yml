@@ -8,8 +8,9 @@ pages:
   - ls
   - pwd
   - sphinx-build -W -b html -c ./ -d {envtmpdir}/doctrees .  {envtmpdir}/html
-  - mv {envtmpdir}/html public/
-  - open _build/html/index.html
+  - mv {envtmpdir}/html ./public/
+  - ls {envtmpdir}/html
+  - cd ./public/
   artifacts:
     paths:
     - public
