@@ -11,6 +11,7 @@ pages:
   - mv {envtmpdir}/html ./public/
   - ls {envtmpdir}/html
   - cd ./public/
+  - ls
   artifacts:
     paths:
     - public
