@@ -1,3 +1,31 @@
+image: python:latest
+
+stages:
+  - test
+  - pages
+  - creating
+
+
+Lol_job1:
+  stage: test  
+  script:
+    - pip install --upgrade pip
+    - pip install pycodestyle
+    - pycodestyle *.py
+
+
+Lol_job2:
+  stage: test  
+  script:
+    - python *.py
+    
+Lol_job3:
+  stage: creating  
+  script:
+    - docker build -t gr-hlit.jinr.ru/artemev/test-with-python .
+    - docker push gr-hlit.jinr.ru/artemev/test-with-python  
+
+
 image: alpine
 
 pages:
