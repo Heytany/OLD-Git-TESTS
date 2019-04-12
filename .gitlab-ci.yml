@@ -11,13 +11,13 @@ Lol_job1:
   script:
     - pip install --upgrade pip
     - pip install pycodestyle
-    - pycodestyle *.py
+    - pycodestyle KMT_method.py 
 
 
 Lol_job2:
   stage: test  
   script:
-    - python *.py
+    - python KMT_method.py
     
 Lol_job3:
   stage: test 
