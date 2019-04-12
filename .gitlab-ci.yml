@@ -20,7 +20,7 @@ Lol_job2:
     - python *.py
     
 Lol_job3:
-  stage: creating  
+  stage: test 
   script:
     - docker build -t gr-hlit.jinr.ru/artemev/test-with-python .
     - docker push gr-hlit.jinr.ru/artemev/test-with-python  
