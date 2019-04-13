@@ -2,7 +2,6 @@ image: python:latest
 
 stages:
   - test
-  - pages
   - creating
 
 
@@ -21,7 +20,7 @@ Lol_job2:
     
     
 Lol_job3:
-  stage: test 
+  stage: creating
   script:
     - pip install docker
     - docker build -t gr-hlit.jinr.ru/artemev/test-with-python .
