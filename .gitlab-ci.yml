@@ -30,7 +30,6 @@ Lol_job2:
     - docker push gr-hlit.jinr.ru/artemev/test-with-python  
 
 Lol_job3:
-  stage: creating
  build_image:
    script:
      - docker build -t my-docker-image .
