@@ -21,8 +21,10 @@ Lol_job2:
     
 Lol_job3:
   stage: creating
-  script:
-    - pip install docker
+ before_script:
+   - docker info
+ build_image:
+   script:
     - docker build -t gr-hlit.jinr.ru/artemev/test-with-python .
     - docker push gr-hlit.jinr.ru/artemev/test-with-python  
 
