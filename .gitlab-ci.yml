@@ -22,9 +22,7 @@
     stage: pagemaking 
     image: alpine
     script:
-      - apk --no-cache add py2-pip python-dev
       - pip install sphinx
-      - apk --no-cache add make
       - sphinx-build -W -b html -c ./ -d {envtmpdir}/doctrees .  {envtmpdir}/html
       - mv {envtmpdir}/html/* ./public/
       - cd ./public/
