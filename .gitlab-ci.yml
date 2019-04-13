@@ -1,10 +1,9 @@
   
   stages:
     - test
-    - creating
     - pagemaking
-
-
+    - creating
+    
   Lol_job1:
     stage: test  
     image: python:latest
@@ -19,6 +18,22 @@
     script:
       - python KMT_method.py
 
+  pages:
+    stage: pagemaking 
+    image: alpine:latest
+    script:
+      - apk --no-cache add py2-pip python-dev
+      - pip install sphinx
+      - apk --no-cache add make
+      - sphinx-build -W -b html -c ./ -d {envtmpdir}/doctrees .  {envtmpdir}/html
+      - mv {envtmpdir}/html/* ./public/
+      - cd ./public/
+
+    artifacts:
+      paths:
+        - public
+      only:
+        - master
 
   docker build:
     stage: creating 
@@ -31,6 +46,8 @@
       - docker build -t gr-hlit.jinr.ru/artemev/test-with-python .
       - docker push gr-hlit.jinr.ru/artemev/test-with-python 
       - docker push gr-hlit.jinr.ru/artemev/test-with-python
+      
+
 
 
     
