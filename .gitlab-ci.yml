@@ -20,7 +20,7 @@
 
   pages:
     stage: pagemaking 
-    image: alpine:latest
+    image: python:latest
     script:
       - apk --no-cache add py2-pip python-dev
       - pip install sphinx
