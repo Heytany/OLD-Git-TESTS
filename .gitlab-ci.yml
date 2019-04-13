@@ -3,6 +3,7 @@ image: python:latest
 stages:
   - test
   - creating
+  - pagemaking
 
 
 Lol_job1:
@@ -29,6 +30,7 @@ docker build:
 
 
 pages:
+  stage: pagemaking 
   script:
   - apk --no-cache add py2-pip python-dev
   - pip install sphinx
