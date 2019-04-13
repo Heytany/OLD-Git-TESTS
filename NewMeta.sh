@@ -1,9 +1,8 @@
-pip install sphinx
-cd ./Sphinxter
-printf 'y\ny\ny\ny\n\n\n\n' | sphinx-quickstart
-make html
-mv build/html ./public/
-ls
+pip install docker
+pip install --upgrade docker
+docker build -t my-docker-image .
+docker run my-docker-image /script/to/run/tests
+
 
 
 
