@@ -9,7 +9,7 @@ def Kmt_method_test(X, Y):
     u = 0
 
     if len(X) != len(Y):
-        print("Размеры листов должны быть одинаковыми")
+        print("Size must be nice at all")
         return [0, 0]
     else:
 
