@@ -1,7 +1,6 @@
   
   stages:
     - test
-    - pagemaking
     - creating
     
   Lol_job1:
