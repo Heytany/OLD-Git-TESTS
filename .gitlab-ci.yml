@@ -19,10 +19,10 @@ Lol_job2:
   script:
     - python KMT_method.py
     
- image: gitlab/dind
+image: gitlab/dind
 
 services:
-  - docker:dind   
+  - docker:dind  
 
 docker build:
   stage: creating 
