@@ -1,5 +1,5 @@
-build:python:
-  image: python:latest
+
+  
   stages:
     - test
     - creating
@@ -14,30 +14,23 @@ build:python:
       - pycodestyle KMT_method.py 
 
   Lol_job2:
-    stage: test  
+    stage: test 
+    image: python:latest
     script:
       - python KMT_method.py
-      
 
-
-build:gitlab/dind:
-  image: gitlab/dind
-  services:
-  - docker:dind  
-
-  stages:
-    - creating
-    - pagemaking
 
   docker build:
     stage: creating 
+    services:
+      - docker:dind  
+    image: gitlab/dind  
     script:
       - docker login gr-hlit.jinr.ru -u $MyPassword -p $MyLogin
       - docker build --help
       - docker build -t gr-hlit.jinr.ru/artemev/test-with-python .
       - docker push gr-hlit.jinr.ru/artemev/test-with-python 
       - docker push gr-hlit.jinr.ru/artemev/test-with-python
-
 
 
     
