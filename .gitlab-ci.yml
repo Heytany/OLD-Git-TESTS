@@ -1,5 +1,4 @@
 
-
 build:precise:
 
     image: gitlab/dind
@@ -9,7 +8,6 @@ build:precise:
   
     stages:
         - creating
-  -      pagemaking
 
     docker build:
      stage: creating 
