@@ -19,6 +19,34 @@ Lol_job2:
   script:
     - python KMT_method.py
     
+    
+Lol_job3:
+  stage: test 
+  script:
+    - pip install docker
+    - docker build -t gr-hlit.jinr.ru/artemev/test-with-python .
+    - docker push gr-hlit.jinr.ru/artemev/test-with-python  
+
+
+
+
+pages:
+  script:
+  - apk --no-cache add py2-pip python-dev
+  - pip install sphinx
+  - apk --no-cache add make
+  - ls
+  - pwd
+  - sphinx-build -W -b html -c ./ -d {envtmpdir}/doctrees .  {envtmpdir}/html
+  - mv {envtmpdir}/html/* ./public/
+  - cd ./public/
+  - ls
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+    
 
 
 
