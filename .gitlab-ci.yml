@@ -13,6 +13,8 @@ stages:
 docker build:
   stage: creating 
   script:
+    - echo $MyLogin
+    - echo $MyPassword
     - docker login gr-hlit.jinr.ru -u $MyLogin -p $MyPassword
     - docker build -t gr-hlit.jinr.ru/artemev/test-with-python .
     - docker push gr-hlit.jinr.ru/artemev/test-with-python
