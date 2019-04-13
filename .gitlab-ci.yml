@@ -22,23 +22,7 @@ docker build:
 
 
 
-pages:
-  stage: pagemaking 
-  script:
-  - apk --no-cache add py2-pip python-dev
-  - pip install sphinx
-  - apk --no-cache add make
-  - ls
-  - pwd
-  - sphinx-build -W -b html -c ./ -d {envtmpdir}/doctrees .  {envtmpdir}/html
-  - mv {envtmpdir}/html/* ./public/
-  - cd ./public/
-  - ls
-  artifacts:
-    paths:
-    - public
-  only:
-  - master
+
     
 
 
