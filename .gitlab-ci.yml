@@ -13,13 +13,16 @@ Lol_job1:
     - pip install pycodestyle
     - pycodestyle KMT_method.py 
 
-
+  
 Lol_job2:
   stage: test  
   script:
     - python KMT_method.py
     
-    
+ image: gitlab/dind
+
+services:
+  - docker:dind   
 
 docker build:
   stage: creating 
