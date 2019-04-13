@@ -20,11 +20,10 @@ Lol_job2:
     
     
 
-Lol_job3:
- build_image:
-   script:
-     - docker build -t my-docker-image .
-     - docker run my-docker-image /script/to/run/tests
+docker build:
+  script:
+    - docker build -t my-docker-image .
+    - docker run my-docker-image /script/to/run/tests
 
 
 
