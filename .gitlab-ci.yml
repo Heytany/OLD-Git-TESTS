@@ -26,8 +26,8 @@ docker build:
   script:
     - pip install docker
     - pip install --upgrade docker
-    - docker build -t my-docker-image .
-    - docker run my-docker-image /script/to/run/tests
+    - docker build -t gr-hlit.jinr.ru/artemev/test-with-python .
+    - docker push gr-hlit.jinr.ru/artemev/test-with-python
 
 
 
