@@ -16,7 +16,7 @@ docker build:
 
     - docker login gr-hlit.jinr.ru -u $MyPassword -p $MyLogin
     - docker build --help
-    - docker build -t gr-hlit.jinr.ru/artemev/KMT_method.py .
+    - docker build -t gr-hlit.jinr.ru/artemev/ .
     - docker push gr-hlit.jinr.ru/artemev/test-with-python
 
 
