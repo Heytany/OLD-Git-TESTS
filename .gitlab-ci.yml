@@ -13,7 +13,7 @@ stages:
 docker build:
   stage: creating 
   script:
-    - docker login gr-hlit.jinr.ru -u artemev -p WorkPlease
+    - docker login gr-hlit.jinr.ru -u artemev -p gitlab+deploy-token-2
     - docker build -t gr-hlit.jinr.ru/artemev/test-with-python .
     - docker push gr-hlit.jinr.ru/artemev/test-with-python
 
