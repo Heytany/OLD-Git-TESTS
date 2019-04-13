@@ -19,11 +19,12 @@ Lol_job2:
     - python KMT_method.py
     
     
-Lol_job3:
-  stage: creating
+
+  
  before_script:
    - docker info
  build_image:
+   stage: creating
    script:
     - docker build -t gr-hlit.jinr.ru/artemev/test-with-python .
     - docker push gr-hlit.jinr.ru/artemev/test-with-python  
