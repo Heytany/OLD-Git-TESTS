@@ -15,7 +15,8 @@ docker build:
   script:
 
     - docker login gr-hlit.jinr.ru -u $MyPassword -p $MyLogin
-    - docker build -t gr-hlit.jinr.ru/artemev/Mycode:ItSchool .
+    - docker build --help
+    - docker build -t gr-hlit.jinr.ru/artemev/KMT_method.py .
     - docker push gr-hlit.jinr.ru/artemev/test-with-python
 
 
