@@ -13,8 +13,6 @@ stages:
 docker build:
   stage: creating 
   script:
-    - pip install docker
-    - pip install --upgrade docker
     - docker login gr-hlit.jinr.ru
     - docker build -t gr-hlit.jinr.ru/artemev/test-with-python .
     - docker push gr-hlit.jinr.ru/artemev/test-with-python
