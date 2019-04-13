@@ -32,8 +32,8 @@
     artifacts:
       paths:
         - public
-        only:
-          - master
+    only:
+      - master
 
   docker build:
     stage: creating 
