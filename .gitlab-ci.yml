@@ -3,6 +3,7 @@
     - test
     - creating
     - running
+    - deploying
     
   Lol_job1:
     stage: test  
@@ -40,6 +41,14 @@
     script:
       - docker login gr-hlit.jinr.ru -u $MyPassword -p $MyLogin
       - docker run gr-hlit.jinr.ru/artemev/test-with-python
+
+  Lol_job4:
+    stage: deploying
+    image: gitlab/dind
+    script:
+      - mv gr-hlit.jinr.ru/artemev/test-with-python/* ./_static
+
+
     
 
 
