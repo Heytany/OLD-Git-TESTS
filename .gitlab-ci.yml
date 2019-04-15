@@ -21,8 +21,9 @@
 
   docker build:
     stage: creating 
-    services:
-      - docker:dind  
+    tags:
+      - ItSchool
+      - LOlWhat
     image: gitlab/dind  
     script:
       - docker login gr-hlit.jinr.ru -u $MyPassword -p $MyLogin
