@@ -32,7 +32,9 @@
 
   Lol_job3:
     stage: running
-    tags: VM2, UpImage
+    tags:
+      - VM2
+      - UpImage
     image: gitlab/dind  
     script:
       - docker login gr-hlit.jinr.ru -u $MyPassword -p $MyLogin
