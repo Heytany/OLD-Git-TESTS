@@ -2,6 +2,7 @@
   stages:
     - test
     - creating
+    - running
     
   Lol_job1:
     stage: test  
@@ -28,6 +29,15 @@
       - docker build --help
       - docker build -t gr-hlit.jinr.ru/artemev/test-with-python .
       - sudo docker push gr-hlit.jinr.ru/artemev/test-with-python 
+
+  Lol_job3:
+    stage: running
+    tag:VM2
+    image: gitlab/dind  
+    script:
+      - docker login gr-hlit.jinr.ru -u $MyPassword -p $MyLogin
+      - docker run gr-hlit.jinr.ru/artemev/test-with-python
+    
 
 
 
